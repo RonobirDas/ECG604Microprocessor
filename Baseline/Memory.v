@@ -9,16 +9,17 @@ module Memory (CS, WE, CLK, ADDR, Mem_Bus);
 	initial begin
 		for (i=0; i<128; i=i+1)
 			begin
-				RAM[i] = 32’d0 //initialize all locations to 0
+				RAM[i] = 32'd0; //initialize all locations to 0
 			end
-				$readmemh(“MIPS_Instructions.txt”, RAM);
+				$readmemh(MIPS_Instructions.txt, RAM);
 				//this operation statement can be inserted to read initial values
 				//from a file
 			end
-	assign Mem_Bus = ((CS == 1’b0) || (WE == 1’b1)) ? 32’bZ : data_out;
-	always @(negedege CLK) begin
-		if ((CS == 1’b11) && (WE == 1’b1))
+	assign Mem_Bus = ((CS == 1'b0) || (WE == 1'b1)) ? 32'bZ : data_out;
+	always @(negedge CLK) begin
+		if ((CS == 1'b11) && (WE == 1'b1))
 			RAM[ADDR] <= Mem_Bus[31:0];
 		data_out <= RAM[ADDR];
 	end
 endmodule
+
