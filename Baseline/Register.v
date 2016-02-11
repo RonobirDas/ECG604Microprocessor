@@ -13,7 +13,7 @@ module Register (CLK, RegW, DR, SR1, SR2, Reg_In, ReadReg1, ReadReg2);
 			end
 	end
 	always @(posedge CLK) begin
-		if (RegW == 1’b1)
+		if (RegW == 1'b1)
 			REG[DR] <= Reg_In[31:0];
 		ReadReg1 <= REG[SR1];
 		ReadReg2 <= REG[SR2];

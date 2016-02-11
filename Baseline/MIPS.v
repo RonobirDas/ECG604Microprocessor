@@ -160,3 +160,4 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus);
    		 else if (state == 3'd2) alu_result_save <= alu_result;
 	end //always
 endmodule
+
