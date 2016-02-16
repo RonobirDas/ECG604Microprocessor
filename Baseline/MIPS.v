@@ -53,7 +53,7 @@ module MIPS (CLK, RST, CS, WE, ADDR, Mem_Bus);
   	assign Mem_Bus = (writing)? readreg2 : 32'bZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ;
   	//drive memory bus only during writes
   	assign ADDR = (fetchDorI)? pc : alu_result_save; //ADDR Mux
- 	REG Register(CLK, regw, dr, `sr1, `sr2, reg_in, readreg1, readreg2);
+ 	Register REG(CLK, regw, dr, `sr1, `sr2, reg_in, readreg1, readreg2);
 
   	initial begin
     		op = and1; 

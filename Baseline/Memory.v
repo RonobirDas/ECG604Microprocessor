@@ -11,7 +11,7 @@ module Memory (CS, WE, CLK, ADDR, Mem_Bus);
 			begin
 				RAM[i] = 32'd0; //initialize all locations to 0
 			end
-				$readmemh(MIPS_Instructions.txt, RAM);
+				$readmemh("MIPS_Instructions.txt", RAM);
 				//this operation statement can be inserted to read initial values
 				//from a file
 			end
