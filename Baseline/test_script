@@ -1,0 +1,9 @@
+vlog mips_testbench.v
+vlog Complete_MIPS.v
+vlog Memory.v
+vlog MIPS.v
+vlog Register.v
+vsim -gui work.mips_testbench
+add wave -r /*
+run -all 
+
