@@ -1,0 +1,6 @@
+vlog *.v
+vsim -gui work.testbench
+add wave -r /*
+run -all 
+
+
