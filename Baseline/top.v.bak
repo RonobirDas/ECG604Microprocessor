@@ -16,33 +16,11 @@
 // $Id$ 
 //------------------------------------------------------------------- 
 `timescale 1ns / 1ps
-module controller (input [5:0] op, funct,
-input zero,
-output memtoreg, memwrite,
-output reg pcsrc, 
-output alusrc,
-output regdst, regwrite,
-output [3:0]jump,
-output [3:0] alucontrol, output byte_enable); //modified for 4 bits
-wire [1:0] aluop;
-wire [1:0]branch;
-wire [5:0] funct_wire;
-maindec md(op, funct,
-memtoreg, 
-memwrite, 
-branch,
-alusrc, 
-regdst, 
-regwrite, 
-jump,
-aluop, byte_enable, funct_wire);
-aludec ad (funct_wire, 
-aluop, 
-alucontrol);
-//branch for pcsrc selection
-always @ (branch)
-if (branch[1] == 0) // BEQ
-pcsrc = branch[0] & zero;
-else if(branch[1] == 1) //BNE
-pcsrc = branch[0] & (~zero); 
+module top (input clk, reset,output [31:0] writedata, dataadr,output memwrite);
+wire [31:0] pc, instr, readdata, wire byte_enable;
+// instantiate processor and memories
+mips mips (clk, reset, pc, instr, memwrite, dataadr,
+writedata, readdata, byte_enable);
+imem imem (pc[7:2], instr);
+dmem dmem (clk, memwrite, byte_enable, dataadr, writedata,readdata);
 endmodule

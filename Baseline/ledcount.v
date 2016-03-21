@@ -15,34 +15,8 @@
 //               
 // $Id$ 
 //------------------------------------------------------------------- 
-`timescale 1ns / 1ps
-module controller (input [5:0] op, funct,
-input zero,
-output memtoreg, memwrite,
-output reg pcsrc, 
-output alusrc,
-output regdst, regwrite,
-output [3:0]jump,
-output [3:0] alucontrol, output byte_enable); //modified for 4 bits
-wire [1:0] aluop;
-wire [1:0]branch;
-wire [5:0] funct_wire;
-maindec md(op, funct,
-memtoreg, 
-memwrite, 
-branch,
-alusrc, 
-regdst, 
-regwrite, 
-jump,
-aluop, byte_enable, funct_wire);
-aludec ad (funct_wire, 
-aluop, 
-alucontrol);
-//branch for pcsrc selection
-always @ (branch)
-if (branch[1] == 0) // BEQ
-pcsrc = branch[0] & zero;
-else if(branch[1] == 1) //BNE
-pcsrc = branch[0] & (~zero); 
-endmodule
+//Takes 5 input lines and assigns it to the 4 leds on the SOCkit
+module ledcount (input [5:0] A, output [3:0] B);
+assign B = A / 4; 
+endmodule  
+ 

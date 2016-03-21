@@ -22,7 +22,7 @@ output memtoreg, memwrite,
 output [1:0] branch, 
 output alusrc,
 output regdst, regwrite, 
-output [3:0]jump, 
+output [4:0]jump, 
 output [1:0] aluop, 
 output byte_enable, 
 output reg [5:0] funct);

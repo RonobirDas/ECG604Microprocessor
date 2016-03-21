@@ -1,5 +1,5 @@
 vlog *.v
-vsim -gui work.ledtest
+vsim -gui work.testbench
 add wave -r /*
 run -all 
 
