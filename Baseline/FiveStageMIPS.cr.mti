@@ -1,0 +1,113 @@
+C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/dmem.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/dmem.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module dmem
+
+Top level modules:
+	dmem
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/flopr.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/flopr.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/ledtest.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/ledtest.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module ledtest
+
+Top level modules:
+	ledtest
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/datapth.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/datapth.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/regfile.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/regfile.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/testbench.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/testbench.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/adder.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/adder.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/mips.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/mips.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/signext.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/signext.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module signext
+
+Top level modules:
+	signext
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/top.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/top.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/controller.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/controller.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/mux2.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/mux2.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/shifter.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/shifter.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module sl2
+
+Top level modules:
+	sl2
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/ledcount.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/ledcount.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module ledcount
+
+Top level modules:
+	ledcount
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/imem.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/imem.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module imem
+
+Top level modules:
+	imem
+
+} {} {}} C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/sl2.v {1 {vlog -work work -stats=none C:/Users/Ronobir/OneDrive/Classes/ECG604/Modelsim/Midterm/sl2.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module sl2
+
+Top level modules:
+	sl2
+
+} {} {}}

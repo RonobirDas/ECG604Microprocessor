@@ -15,19 +15,8 @@
 //               
 // $Id$ 
 //------------------------------------------------------------------- 
-`timescale 1ns / 1ps
-//Inputs and Outputs
-module top (input clk, reset,output [31:0] writedata, dataadr,output memwrite);
-
-//Wires and  REGs
-
-wire [31:0] pc, instr, readdata;
-wire byte_enable;
-
-// instantiate processor and memories
-
-mips mips (clk, reset, pc, instr, memwrite, dataadr,
-writedata, readdata, byte_enable);
-imem imem (pc[7:2], instr);
-dmem dmem (clk, memwrite, byte_enable, dataadr, writedata,readdata);
-endmodule
+//Takes 5 input lines and assigns it to the 4 leds on the SOCkit
+module ledcount (input [5:0] A, output [3:0] B);
+assign B = A / 4; 
+endmodule  
+ 

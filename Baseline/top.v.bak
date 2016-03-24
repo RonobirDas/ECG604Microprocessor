@@ -16,16 +16,9 @@
 // $Id$ 
 //------------------------------------------------------------------- 
 `timescale 1ns / 1ps
-//Inputs and Outputs
 module top (input clk, reset,output [31:0] writedata, dataadr,output memwrite);
-
-//Wires and  REGs
-
-wire [31:0] pc, instr, readdata;
-wire byte_enable;
-
+wire [31:0] pc, instr, readdata, wire byte_enable;
 // instantiate processor and memories
-
 mips mips (clk, reset, pc, instr, memwrite, dataadr,
 writedata, readdata, byte_enable);
 imem imem (pc[7:2], instr);

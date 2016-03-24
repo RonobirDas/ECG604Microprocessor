@@ -51,10 +51,10 @@ mux2 #(32) pcmux(pcnextbr, wj,jump[0], pcnext); //- now a mux4 or 2 mux 2s
 
 // register file logic
 // register file is now muxed twice over, so need two new wires, for address and others. 
-mux2 #(32) jaladdressmux(writereg, 5'd31 ,jump[2],wra3); // selection between register 31 for $rs and regular writereg
-mux2 #(32) jalwritedatamux(result, pcplus4 ,jump[3],wrd3); //selection between pcplus4 and result from the write data line. 
+mux2 #(32) jaladdressmux(writereg, 5'd31 ,jump[2],wra3);
+mux2 #(32) jalwritedatamux(result, pcplus4 ,jump[3],wrd3); 
 regfile rf(clk, regwrite, instr[25:21],
-instr[20:16], wra3, wrd3, srca, writedata);
+instr[20:16], writereg, result, srca, writedata);
 mux2 #(5) wrmux(instr[20:16], instr[15:11],regdst, writereg);
 mux2 #(32) resmux(aluout, readdata, memtoreg, result);
 signext se(instr[15:0], signimm);

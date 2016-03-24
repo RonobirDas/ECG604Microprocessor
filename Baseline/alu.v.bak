@@ -131,14 +131,6 @@ out = b << a;
 		else
 		zero = 0;
 end
-4'b1010: // SRAV 9
-begin
-out = b >>> a;
-		if (out == 0)
-		 zero = 1;  
-		else
-		zero = 0;
-end
 
 
         endcase
