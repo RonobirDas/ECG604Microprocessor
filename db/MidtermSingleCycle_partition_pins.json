@@ -1,0 +1,277 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "writedata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[8]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[9]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[10]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[11]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[12]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[13]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[14]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[15]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[16]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[17]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[18]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[19]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[20]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[21]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[22]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[23]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[24]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[25]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[26]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[27]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[28]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[29]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[30]",
+					"strict" : false
+				},
+				{
+					"name" : "writedata[31]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[16]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[17]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[18]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[19]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[20]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[21]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[22]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[23]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[24]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[25]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[26]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[27]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[28]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[29]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[30]",
+					"strict" : false
+				},
+				{
+					"name" : "dataadr[31]",
+					"strict" : false
+				},
+				{
+					"name" : "memwrite",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

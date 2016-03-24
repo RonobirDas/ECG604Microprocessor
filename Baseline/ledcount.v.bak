@@ -1,5 +1,0 @@
-//Takes 5 input lines and assigns it to the 4 leds on the SOCkit
-module ledcount (input [5:0] A, output [3:0] B);
-assign B = A / 4; 
-endmodule  
- 
