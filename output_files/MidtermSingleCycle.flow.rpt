@@ -1,5 +1,5 @@
 Flow report for MidtermSingleCycle
-Thu Mar 24 00:10:16 2016
+Sun Mar 27 14:22:51 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Mar 24 00:10:16 2016       ;
+; Flow Status                     ; Successful - Sun Mar 27 14:22:51 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; MidtermSingleCycle                          ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31I7                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,334 / 41,910 ( 3 % )                      ;
-; Total registers                 ; 2372                                        ;
+; Logic utilization (in ALMs)     ; 1,309 / 41,910 ( 3 % )                      ;
+; Total registers                 ; 2385                                        ;
 ; Total pins                      ; 67 / 499 ( 13 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                       ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/24/2016 00:06:29 ;
+; Start date & time ; 03/27/2016 14:18:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MidtermSingleCycle  ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+--------------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value      ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+--------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 106618766473035.145880318900824 ; --                 ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 106618766473035.145911352403708 ; --                 ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --                 ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>             ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 100                             ; --                 ; --          ; --             ;
@@ -97,12 +97,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 868 MB              ; 00:00:24                           ;
-; Fitter                    ; 00:02:39     ; 1.0                     ; 2177 MB             ; 00:03:37                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 899 MB              ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:19     ; 1.0                     ; 1229 MB             ; 00:00:19                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 810 MB              ; 00:00:02                           ;
-; Total                     ; 00:03:30     ; --                      ; --                  ; 00:04:33                           ;
+; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 874 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:02:46     ; 1.0                     ; 2140 MB             ; 00:03:38                           ;
+; Assembler                 ; 00:00:14     ; 1.0                     ; 901 MB              ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:20     ; 1.0                     ; 1229 MB             ; 00:00:19                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 810 MB              ; 00:00:02                           ;
+; Total                     ; 00:03:46     ; --                      ; --                  ; 00:04:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

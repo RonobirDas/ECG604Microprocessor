@@ -1,21 +1,18 @@
-//-------------------------------------------------------------------
-//                                                                 
-//  COPYRIGHT (C) 2016, University of Nevada, Las Vegas
-//                                                                  
+// -------------------------------------------------------------------
+//  COPYRIGHT (C) 2016, University of Nevada, Las Vegas                                  
 //  THIS FILE MAY NOT BE MODIFIED OR REDISTRIBUTED WITHOUT THE      
-//  EXPRESSED WRITTEN CONSENT OF RONOBIR DAS, JONATHAN YOUNG, EMMA REGENTOVA
-//                                                                  
-//  Name:                   University of Nevada, Las Vegas         
-//  university_address1          4505 S. Maryland Parkway, Las Vegas, NV, 89154               
+//  EXPRESSED WRITTEN CONSENT OF RONOBIR DAS, JONATHAN YOUNG, AND EMMA REGENTOVA
+//  Name:                 University of Nevada, Las Vegas         
+//  university_address1   4505 S. Maryland Parkway, Las Vegas, NV, 89154               
 //  unlv_address2         ece.unlv.edu                                     
-//-------------------------------------------------------------------
-// Title       : dmem.v
-// Author      : RONOBIR DAS & JONATHAN YOUNG
-// Description : Data Memory for the MIPS Processor. Modification of H&H text code to include byte handling
-//               
-// $Id$ 
-//-------------------------------------------------------------------
-`timescale 1ns / 1ps 
+// -------------------------------------------------------------------
+//  Title       : alu.v
+//  Author      : RONOBIR DAS and JONATHAN YOUNG
+//  Description : This is the Arithmetic Logic Unit (ALU), which performs
+//  all of the functions passed to it by the ALU Decoder.
+// -------------------------------------------------------------------
+
+`timescale 1ns / 1ps								//Used for simulation purposes.
 module alu (
     input [31:0] a,b,
     input [3:0] sel,

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Mar 24 00:09:29 2016
+Fitter Status : Successful - Sun Mar 27 14:21:58 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : MidtermSingleCycle
 Top-level Entity Name : top
 Family : Cyclone V
 Device : 5CSXFC6D6F31I7
 Timing Models : Final
-Logic utilization (in ALMs) : 1,334 / 41,910 ( 3 % )
-Total registers : 2372
+Logic utilization (in ALMs) : 1,309 / 41,910 ( 3 % )
+Total registers : 2385
 Total pins : 67 / 499 ( 13 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 5,662,720 ( 0 % )

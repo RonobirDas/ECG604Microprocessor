@@ -8,14 +8,14 @@
 // -------------------------------------------------------------------
 //  Title       : flopr.v
 //  Author      : RONOBIR DAS and JONATHAN YOUNG
-//  Description : In progress...
+//  Description : This is a resettable Flip-Flop from Harris and Harris.
 // -------------------------------------------------------------------
-module flopr # (parameter WIDTH = 8)
-(input clk, reset,
-	input [WIDTH-1:0] d,
-	output reg [WIDTH-1:0] q);
-always @ (posedge clk, posedge reset) begin
-if (reset) q <= 0;
-else q <= d;
-end
+module flopr #	(parameter WIDTH = 8)
+				(input clk, reset,
+				 input [WIDTH-1:0] d,
+				 output reg [WIDTH-1:0] q);
+
+	always @ (posedge clk, posedge reset)
+		if (reset) q <= 0;
+		else 	   q <= d;
 endmodule

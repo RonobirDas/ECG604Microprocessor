@@ -51,8 +51,6 @@ set_global_assignment -name VERILOG_FILE Baseline/regfile.v
 set_global_assignment -name VERILOG_FILE Baseline/mux2.v
 set_global_assignment -name VERILOG_FILE Baseline/MIPS.v
 set_global_assignment -name VERILOG_FILE Baseline/maindec.v
-set_global_assignment -name VERILOG_FILE Baseline/ledtest.v
-set_global_assignment -name VERILOG_FILE Baseline/ledcount.v
 set_global_assignment -name VERILOG_FILE Baseline/imem.v
 set_global_assignment -name VERILOG_FILE Baseline/flopr.v
 set_global_assignment -name VERILOG_FILE Baseline/dmem.v

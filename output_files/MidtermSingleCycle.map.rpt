@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MidtermSingleCycle
-Thu Mar 24 00:06:46 2016
+Sun Mar 27 14:19:08 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 24 00:06:46 2016       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 27 14:19:08 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; MidtermSingleCycle                          ;
 ; Top-level Entity Name           ; top                                         ;
@@ -209,14 +209,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1722      ;
+; Estimate of Logic utilization (ALMs needed) ; 1724      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1243      ;
-;     -- 7 input functions                    ; 128       ;
-;     -- 6 input functions                    ; 762       ;
-;     -- 5 input functions                    ; 68        ;
-;     -- 4 input functions                    ; 84        ;
-;     -- <=3 input functions                  ; 201       ;
+; Combinational ALUT usage for logic          ; 1261      ;
+;     -- 7 input functions                    ; 129       ;
+;     -- 6 input functions                    ; 759       ;
+;     -- 5 input functions                    ; 42        ;
+;     -- 4 input functions                    ; 97        ;
+;     -- <=3 input functions                  ; 234       ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 2334      ;
 ;                                             ;           ;
@@ -226,8 +226,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 2334      ;
-; Total fan-out                               ; 13806     ;
-; Average fan-out                             ; 3.72      ;
+; Total fan-out                               ; 13808     ;
+; Average fan-out                             ; 3.70      ;
 +---------------------------------------------+-----------+
 
 
@@ -236,22 +236,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------+--------------+
-; |top                            ; 1243 (0)          ; 2334 (0)     ; 0                 ; 0          ; 67   ; 0            ; |top                                            ; work         ;
+; |top                            ; 1261 (0)          ; 2334 (0)     ; 0                 ; 0          ; 67   ; 0            ; |top                                            ; work         ;
 ;    |dmem:dmem|                  ; 800 (800)         ; 2048 (2048)  ; 0                 ; 0          ; 0    ; 0            ; |top|dmem:dmem                                  ; work         ;
-;    |imem:imem|                  ; 22 (22)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|imem:imem                                  ; work         ;
-;    |mips:mips|                  ; 421 (0)           ; 286 (0)      ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips                                  ; work         ;
+;    |imem:imem|                  ; 26 (26)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|imem:imem                                  ; work         ;
+;    |mips:mips|                  ; 435 (0)           ; 286 (0)      ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips                                  ; work         ;
 ;       |controller:c|            ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|controller:c                     ; work         ;
 ;          |aludec:ad|            ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|controller:c|aludec:ad           ; work         ;
 ;          |maindec:md|           ; 6 (6)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|controller:c|maindec:md          ; work         ;
-;       |datapath:dp|             ; 414 (0)           ; 286 (0)      ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp                      ; work         ;
+;       |datapath:dp|             ; 428 (0)           ; 286 (0)      ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp                      ; work         ;
 ;          |adder:pcadd1|         ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|adder:pcadd1         ; work         ;
 ;          |adder:pcadd2|         ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|adder:pcadd2         ; work         ;
-;          |alu:alu|              ; 112 (112)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|alu:alu              ; work         ;
-;          |flopr:pcreg|          ; 0 (0)             ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|flopr:pcreg          ; work         ;
+;          |alu:alu|              ; 126 (126)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|alu:alu              ; work         ;
+;          |flopr:pcreg|          ; 1 (1)             ; 30 (30)      ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|flopr:pcreg          ; work         ;
 ;          |mux2:jaladdressmux|   ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|mux2:jaladdressmux   ; work         ;
 ;          |mux2:jalwritedatamux| ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|mux2:jalwritedatamux ; work         ;
-;          |mux2:pcmux|           ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|mux2:pcmux           ; work         ;
-;          |regfile:rf|           ; 177 (177)         ; 256 (256)    ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|regfile:rf           ; work         ;
+;          |mux2:pcmux|           ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|mux2:pcmux           ; work         ;
+;          |regfile:rf|           ; 174 (174)         ; 256 (256)    ; 0                 ; 0          ; 0    ; 0            ; |top|mips:mips|datapath:dp|regfile:rf           ; work         ;
 +---------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1065,18 +1065,27 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[30]         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[31]         ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[1]          ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[22]         ;
-; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[13]         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight0       ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight0       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[27]         ;
+; 4:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; Yes        ; |top|mips:mips|datapath:dp|flopr:pcreg|q[2]          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftLeft1        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftLeft1        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight1       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight1       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftLeft1        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftLeft1        ;
+; 4:1                ; 50 bits   ; 100 LEs       ; 100 LEs              ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight1       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftLeft0        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight0       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight0       ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|mux2:jalwritedatamux|y[8] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|mux2:jaladdressmux|y[0]   ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 155 LEs              ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|Mux10             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|mux2:jaladdressmux|y[1]   ;
 ; 5:1                ; 48 bits   ; 144 LEs       ; 144 LEs              ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight0       ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight0       ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftLeft0        ;
+; 6:1                ; 24 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight1       ;
+; 16:1               ; 31 bits   ; 310 LEs       ; 248 LEs              ; 62 LEs                 ; No         ; |top|mips:mips|datapath:dp|alu:alu|Mux24             ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |top|mips:mips|datapath:dp|alu:alu|ShiftRight1       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
@@ -1229,26 +1238,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 2334                        ;
 ;     CLR               ; 30                          ;
 ;     ENA               ; 2304                        ;
-; arriav_lcell_comb     ; 1243                        ;
+; arriav_lcell_comb     ; 1261                        ;
 ;     arith             ; 125                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 30                          ;
+;         1 data inputs ; 31                          ;
 ;         2 data inputs ; 20                          ;
-;         3 data inputs ; 3                           ;
+;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 70                          ;
 ;         5 data inputs ; 1                           ;
-;     extend            ; 128                         ;
-;         7 data inputs ; 128                         ;
-;     normal            ; 990                         ;
-;         2 data inputs ; 113                         ;
-;         3 data inputs ; 34                          ;
-;         4 data inputs ; 14                          ;
-;         5 data inputs ; 67                          ;
-;         6 data inputs ; 762                         ;
+;     extend            ; 129                         ;
+;         7 data inputs ; 129                         ;
+;     normal            ; 1007                        ;
+;         2 data inputs ; 119                         ;
+;         3 data inputs ; 61                          ;
+;         4 data inputs ; 27                          ;
+;         5 data inputs ; 41                          ;
+;         6 data inputs ; 759                         ;
 ; boundary_port         ; 67                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.60                       ;
-; Average LUT depth     ; 6.14                        ;
+; Max LUT depth         ; 13.10                       ;
+; Average LUT depth     ; 6.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1257,7 +1266,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -1267,29 +1276,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Thu Mar 24 00:06:28 2016
+    Info: Processing started: Sun Mar 27 14:18:43 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MidtermSingleCycle -c MidtermSingleCycle
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/top.v
-    Info (12023): Found entity 1: top File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 16
+    Info (12023): Found entity 1: top File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/testbench.v
-    Info (12023): Found entity 1: testbench File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/testbench.v Line: 19
+    Info (12023): Found entity 1: testbench File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/testbench.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/sl2.v
-    Info (12023): Found entity 1: sl2 File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/sl2.v Line: 13
+    Info (12023): Found entity 1: sl2 File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/sl2.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/signext.v
-    Info (12023): Found entity 1: signext File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/signext.v Line: 13
+    Info (12023): Found entity 1: signext File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/signext.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/regfile.v
-    Info (12023): Found entity 1: regfile File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/regfile.v Line: 14
+    Info (12023): Found entity 1: regfile File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/regfile.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/mux2.v
-    Info (12023): Found entity 1: mux2 File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/mux2.v Line: 15
+    Info (12023): Found entity 1: mux2 File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/mux2.v Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/mips.v
     Info (12023): Found entity 1: mips File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/MIPS.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/maindec.v
     Info (12023): Found entity 1: maindec File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/maindec.v Line: 16
-Info (12021): Found 1 design units, including 1 entities, in source file baseline/ledtest.v
-    Info (12023): Found entity 1: ledtest File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/ledtest.v Line: 13
-Info (12021): Found 1 design units, including 1 entities, in source file baseline/ledcount.v
-    Info (12023): Found entity 1: ledcount File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/ledcount.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/imem.v
     Info (12023): Found entity 1: imem File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/imem.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/flopr.v
@@ -1301,20 +1306,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file baselin
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/controller.v
     Info (12023): Found entity 1: controller File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/controller.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/aludec.v
-    Info (12023): Found entity 1: aludec File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/aludec.v Line: 17
+    Info (12023): Found entity 1: aludec File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/aludec.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 16
+    Info (12023): Found entity 1: alu File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file baseline/adder.v
     Info (12023): Found entity 1: adder File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/adder.v Line: 13
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "mips" for hierarchy "mips:mips" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 24
-Info (12128): Elaborating entity "controller" for hierarchy "mips:mips|controller:c" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/MIPS.v Line: 44
+Info (12128): Elaborating entity "mips" for hierarchy "mips:mips" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 25
+Info (12128): Elaborating entity "controller" for hierarchy "mips:mips|controller:c" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/MIPS.v Line: 42
 Warning (10240): Verilog HDL Always Construct warning at controller.v(43): inferring latch(es) for variable "pcsrc", which holds its previous value in one or more paths through the always construct File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/controller.v Line: 43
 Info (10041): Inferred latch for "pcsrc" at controller.v(46) File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/controller.v Line: 46
 Info (12128): Elaborating entity "maindec" for hierarchy "mips:mips|controller:c|maindec:md" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/controller.v Line: 37
 Warning (10230): Verilog HDL assignment warning at maindec.v(29): truncated value with size 15 to match size of target (14) File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/maindec.v Line: 29
 Info (12128): Elaborating entity "aludec" for hierarchy "mips:mips|controller:c|aludec:ad" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/controller.v Line: 40
-Info (12128): Elaborating entity "datapath" for hierarchy "mips:mips|datapath:dp" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/MIPS.v Line: 60
+Info (12128): Elaborating entity "datapath" for hierarchy "mips:mips|datapath:dp" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/MIPS.v Line: 58
 Info (12128): Elaborating entity "flopr" for hierarchy "mips:mips|datapath:dp|flopr:pcreg" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/datapth.v Line: 39
 Info (12128): Elaborating entity "adder" for hierarchy "mips:mips|datapath:dp|adder:pcadd1" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/datapth.v Line: 40
 Info (12128): Elaborating entity "sl2" for hierarchy "mips:mips|datapath:dp|sl2:immsh" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/datapth.v Line: 41
@@ -1323,38 +1328,38 @@ Info (12128): Elaborating entity "regfile" for hierarchy "mips:mips|datapath:dp|
 Info (12128): Elaborating entity "mux2" for hierarchy "mips:mips|datapath:dp|mux2:wrmux" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/datapth.v Line: 52
 Info (12128): Elaborating entity "signext" for hierarchy "mips:mips|datapath:dp|signext:se" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/datapth.v Line: 54
 Info (12128): Elaborating entity "alu" for hierarchy "mips:mips|datapath:dp|alu:alu" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/datapth.v Line: 58
-Warning (10240): Verilog HDL Always Construct warning at alu.v(31): inferring latch(es) for variable "zero", which holds its previous value in one or more paths through the always construct File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 31
-Info (10041): Inferred latch for "zero" at alu.v(31) File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 31
-Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 25
+Warning (10240): Verilog HDL Always Construct warning at alu.v(33): inferring latch(es) for variable "zero", which holds its previous value in one or more paths through the always construct File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 33
+Info (10041): Inferred latch for "zero" at alu.v(33) File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 33
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 26
 Warning (10850): Verilog HDL warning at imem.v(19): number of words (18) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/imem.v Line: 19
 Warning (10030): Net "RAM.data_a" at imem.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/imem.v Line: 16
 Warning (10030): Net "RAM.waddr_a" at imem.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/imem.v Line: 16
 Warning (10030): Net "RAM.we_a" at imem.v(16) has no driver or initial value, using a default initial value '0' File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/imem.v Line: 16
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 26
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/top.v Line: 27
 Warning (10235): Verilog HDL Always Construct warning at dmem.v(28): variable "byte_enable" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/dmem.v Line: 28
 Info (276014): Found 3 instances of uninferred RAM logic
     Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/dmem.v Line: 24
     Info (276004): RAM logic "imem:imem|RAM" is uninferred due to inappropriate RAM size File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/imem.v Line: 16
-    Info (276007): RAM logic "mips:mips|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/regfile.v Line: 18
+    Info (276007): RAM logic "mips:mips|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/regfile.v Line: 21
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Jonathan Young/Documents/ECG604Microprocessor/db/MidtermSingleCycle.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13012): Latch mips:mips|datapath:dp|alu:alu|zero has unsafe behavior File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 22
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mips:mips|controller:c|aludec:ad|WideOr2 File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/aludec.v Line: 26
+Warning (13012): Latch mips:mips|datapath:dp|alu:alu|zero has unsafe behavior File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mips:mips|controller:c|aludec:ad|WideOr3 File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/aludec.v Line: 27
 Info (286030): Timing-Driven Synthesis is running
-Warning (14026): LATCH primitive "mips:mips|datapath:dp|alu:alu|zero" is permanently enabled File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 22
+Warning (14026): LATCH primitive "mips:mips|datapath:dp|alu:alu|zero" is permanently enabled File: C:/Users/Jonathan Young/Documents/ECG604Microprocessor/Baseline/alu.v Line: 25
 Info (17049): 768 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Jonathan Young/Documents/ECG604Microprocessor/output_files/MidtermSingleCycle.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3614 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3632 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 3547 logic cells
+    Info (21061): Implemented 3565 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 879 megabytes
-    Info: Processing ended: Thu Mar 24 00:06:46 2016
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 886 megabytes
+    Info: Processing ended: Sun Mar 27 14:19:08 2016
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+

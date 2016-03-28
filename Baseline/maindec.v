@@ -13,18 +13,18 @@
 // -------------------------------------------------------------------
 
 `timescale 1ns / 1ps								//Used for simulation purposes.
-module maindec (input [5:0] op, 
-	input [5:0] funct_pass, 
-	output memtoreg, memwrite, 
-	output [1:0] branch, 
-	output alusrc,
-	output regdst, regwrite, 
-	output [3:0]jump, 
-	output [1:0] aluop, 
-	output byte_enable, 
-	output reg [5:0] funct);
+module maindec (input	[5:0]	op, 
+				input	[5:0]	funct_pass,			//New
+				output			memtoreg, memwrite, 
+				output	[1:0]	branch, 			//Adjusted
+				output			alusrc,
+				output			regdst, regwrite, 
+				output	[3:0]	jump,				//Adjusted
+				output	[1:0]	aluop, 
+				output 			byte_enable, 		//New
+				output reg [5:0] funct);			//Why is a reg here? New
 
-reg [14:0] controls;
+reg [14:0] controls;								//Adjusted size.
 
 assign {regwrite, regdst, alusrc, branch, memwrite, memtoreg, jump, aluop , byte_enable}  = controls;
 
@@ -71,7 +71,7 @@ case(op)
 //Jump Type 
 6'b000010:  controls <= 15'b000000000000010; 		//Jump Instruction
 
-default:	controls <= 15'bX;						//Don't Care Instructions - Not Used
+default:	controls <= 15'bxxxxxxxxxxxxxxx;		//Illegal Operation.
 endcase
 endmodule
 

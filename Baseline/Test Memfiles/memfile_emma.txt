@@ -1,0 +1,14 @@
+#This is another MIPS testing file, written in ASM and converted to machine code in hex.
+#This uses the code sample sent to be tested as part of the project specifications.
+#
+#Author Jonathan Young 3/27/16
+#
+#Tests single and multi-stage MIPS processor.
+
+#				Assembly				Description				Address				Machine
+				addi $1, $0, 1			#Initialize $1 = 1		0					
+				addi $2, $1, 1			#Add $2=$1+1=2			4					
+				j	 end				#Should be taken		8					
+				add  $1, $1, $2			#instruction skipped.	C 					
+end:			sw $2, 4($0)			#Store					10					
+				stop					#Halt processes			14					

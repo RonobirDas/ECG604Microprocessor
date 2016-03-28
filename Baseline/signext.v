@@ -8,9 +8,10 @@
 // -------------------------------------------------------------------
 //  Title       : signext.v
 //  Author      : RONOBIR DAS and JONATHAN YOUNG
-//  Description : This is the sign extender used for PC branching.
+//  Description : This is the sign extender used for PC branching. The
+//  code is provided from the Harris and Harris text.
 // -------------------------------------------------------------------
 module signext (input [15:0] a,
-	output [31:0] y);
-assign y = {{16{a[15]}}, a};
+				output [31:0] y);
+	assign y = {{16{a[15]}}, a};
 endmodule

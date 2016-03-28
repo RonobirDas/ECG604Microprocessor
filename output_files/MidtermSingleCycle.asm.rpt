@@ -1,5 +1,5 @@
 Assembler report for MidtermSingleCycle
-Thu Mar 24 00:09:45 2016
+Sun Mar 27 14:22:19 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Mar 24 00:09:45 2016 ;
+; Assembler Status      ; Successful - Sun Mar 27 14:22:19 2016 ;
 ; Revision Name         ; MidtermSingleCycle                    ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone V                             ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                                                             ;
 +----------------+-----------------------------------------------------------------------------------------------------+
 ; Device         ; 5CSXFC6D6F31I7                                                                                      ;
-; JTAG usercode  ; 0x00E45DE0                                                                                          ;
-; Checksum       ; 0x00E45DE0                                                                                          ;
+; JTAG usercode  ; 0x00E4EFA0                                                                                          ;
+; Checksum       ; 0x00E4EFA0                                                                                          ;
 +----------------+-----------------------------------------------------------------------------------------------------+
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Thu Mar 24 00:09:34 2016
+    Info: Processing started: Sun Mar 27 14:22:05 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MidtermSingleCycle -c MidtermSingleCycle
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 899 megabytes
-    Info: Processing ended: Thu Mar 24 00:09:46 2016
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 901 megabytes
+    Info: Processing ended: Sun Mar 27 14:22:19 2016
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:12
 
 

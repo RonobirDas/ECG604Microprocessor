@@ -10,24 +10,21 @@
 //  Author      : RONOBIR DAS and JONATHAN YOUNG
 //  Description : This module combines the data path and the controller.
 // -------------------------------------------------------------------
-
 `timescale 1ns / 1ps								//Used for simulation purposes.
-module mips (input clk, reset,
-	output [31:0] pc,
-	input [31:0] instr,
-	output memwrite,
-	output [31:0] aluout,
-	writedata,
-	input [31:0] readdata,
-	output byte_enable
-);
+module mips (input			clk, reset,
+			 output [31:0]	pc,
+			 input	[31:0]	instr,
+			 output			memwrite,
+			 output [31:0]	aluout,writedata,
+			 input	[31:0]	readdata,
+			 output			byte_enable);			//Newly added output line.
 
-//wire and reg definitions.
-wire memtoreg; 
-wire [1:0] branch; 
-wire alusrc, regdst, regwrite, zero, pcsrc;
-wire [3:0]jump;
-wire [3:0] alucontrol;
+	//wire and reg definitions - additonal lines and increased busses added here.
+	wire memtoreg; 
+	wire [1:0] branch; 
+	wire alusrc, regdst, regwrite, zero, pcsrc;
+	wire [3:0]jump;
+	wire [3:0] alucontrol;
 
 //module instantiations
 controller c(instr[31:26], 
@@ -41,7 +38,7 @@ controller c(instr[31:26],
 	regwrite, 
 	jump, 
 	alucontrol,
-	byte_enable);
+	byte_enable);									//Additional line here.
 
 datapath dp(clk, 
 	reset, 
@@ -57,6 +54,6 @@ datapath dp(clk,
 	instr,
 	aluout, 
 	writedata, 
-	readdata);
+	readdata);									//Additional line here.
 
 endmodule
